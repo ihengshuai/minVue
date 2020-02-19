@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>实现迷你版的Vue</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="wrapper">
+        <p class="title">
+          title：
+          <span>{{asyncTitle}}</span>
+        </p>
+
+        <p>
+          <em>name:</em>
+          <span>{{name}}</span>
+        </p>
+        <p>
+          <em>年龄：</em>
+          {{age}}
+        </p>
+
+        <label for="userName">
+          <em>修改name:</em>
+        </label>
+        <input
+          id="userName"
+          type="text"
+          m-model="name"
+          placeholder="双向绑定name"
+        />
+        <p>
+          <button @click="addage" :title="button">增大年龄</button>
+          <button @click="reduceage" :title="button">减小年龄</button>
+        </p>
+        <div m-text="mtext"></div>
+        <div m-html="mhtml"></div>
+        <div>
+          <label for="keyup"
+            >keyup事件: <input type="text" @keyup="presskey" />您按下了：<span
+              >{{keyword}}</span
+            ></label
+          >
+        </div>
+      </div>
+      <div class="collese">
+        点击查看实现了什么
+        <div m-html='notes'></div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "all": "实现了事件监听，依赖收集，双向绑定，更新等等，这个例子只是简单的模拟下vue，如果你很感兴趣，可以在此基础上进行完善",
+  "v-model": true,
+  "@Event": true,
+  ":bind": false,
+  "arrayModel": false,
+  "v-html": true,
+  "computed": false
+}
